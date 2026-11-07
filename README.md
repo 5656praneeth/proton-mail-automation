@@ -68,6 +68,14 @@ mvn clean test -Dbrowser=edge -Dheadless=true
 - Keep credentials local and out of Git
 - Keep only real project source, tests, and documentation in the repo
 
-## Current status
-This repository contains the Selenium automation framework structure, shared page utilities, and the Proton Mail frame-handling approach used in this project. The next step is live DOM validation and completing the end-to-end test execution with real Proton UI data.
+## Assignment status
+This repository contains the Selenium automation framework structure, shared page utilities, and the Proton Mail frame-handling approach used in this project. The core assignment work is implemented and pushed to GitHub.
+
+Remaining validation work:
+- verify all `VERIFY` locators against the live Proton Mail DOM
+- run the automation suite with real test accounts
+- confirm end-to-end flows for compose, inbox, drafts, search, and attachments
+- capture actual pass/fail evidence rather than assuming the framework is complete
+
+This keeps the project honest: implementation is done, but runtime verification against the live UI is still required for final assignment completion.
 
