@@ -32,16 +32,23 @@ mvn clean test -Dbrowser=edge -Dheadless=true
 ```
 
 ## Project layout
+- `.github` – GitHub automation, workflow metadata and repo tooling
 - `src/test/java/com/qa/driver` – browser lifecycle
-- `config` – configuration reader
-- `base` – test setup/teardown
-- `pages` – Page Object Model
-- `utils` – waits and element actions
-- `tests` – test classes by functional area
-- `listeners` – failure screenshots
+- `src/test/java/com/qa/config` – configuration reader
+- `src/test/java/com/qa/base` – test setup/teardown
+- `src/test/java/com/qa/pages` – Page Object Model
+- `src/test/java/com/qa/utils` – waits and element actions
+- `src/test/java/com/qa/tests` – test classes by functional area
+- `src/test/java/com/qa/listeners` – failure screenshots
 - `src/test/resources` – config and test fixtures
 - `test-cases` – assessment test inventory
 - `docs` – defect and architecture templates
+- `target` – generated Maven build artifacts (ignored by Git via `.gitignore`)
+
+## Repository hygiene
+- `target/` and IDE folders are excluded from Git via `.gitignore`.
+- Keep credentials in environment variables or local config files, never in source control.
+- Only commit real project source and test assets; generated output should stay out of the repo.
 
 ## Reliability approach
 - Implicit wait disabled; explicit waits used for state transitions.
