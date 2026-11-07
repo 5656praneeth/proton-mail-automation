@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Proton Mail UI Automation" parallel="false" verbose="1">
+ <listeners><listener class-name="com.qa.listeners.TestListener"/></listeners>
+ <test name="Regression Suite"><classes>
+  <class name="com.qa.tests.AuthenticationTests"/>
+  <class name="com.qa.tests.ComposeTests"/>
+  <class name="com.qa.tests.DraftTests"/>
+  <class name="com.qa.tests.InboxTests"/>
+  <class name="com.qa.tests.SearchTests"/>
+  <class name="com.qa.tests.FilterTests"/>
+  <class name="com.qa.tests.AsyncTests"/>
+  <class name="com.qa.tests.AttachmentTests"/>
+ </classes></test>
+</suite>

@@ -1,0 +1,21 @@
+ID,Area,Scenario,Priority,Automation,Expected Result
+TC01,Authentication,Valid login,P0,Automate,Mailbox opens
+TC02,Authentication,Invalid login,P0,Automate,Authentication error shown
+TC03,Compose,Send valid email,P0,Automate,Email sent and received
+TC04,Compose,Blank recipient validation,P1,Automate,Validation prevents invalid send
+TC05,Compose,Malformed recipient validation,P1,Automate,Recipient validation shown
+TC06,Compose,Two-account delivery verification,P0,Automate,Receiver sees matching subject and body
+TC07,Drafts,Create draft,P1,Automate,Draft is saved
+TC08,Drafts,Reopen and edit draft,P1,Automate,Changes persist
+TC09,Inbox,Mark read/unread,P1,Automate,Read state changes
+TC10,Inbox,Star/unstar,P2,Automate,Star state changes
+TC11,Inbox,Archive,P1,Automate,Message leaves inbox and appears in archive/all mail as expected
+TC12,Inbox,Delete and restore,P1,Automate,Message moves to trash and can be restored
+TC13,Search,Keyword search,P1,Automate,Matching messages shown
+TC14,Search,Advanced multi-condition search,P1,Automate,Only matching messages shown
+TC15,Search,No-result search,P2,Automate,Empty-state message shown
+TC16,Filters,Create and apply filter,P1,Automate,Matching message receives configured action
+TC17,Async,Undo Send,P1,Automate,Send is cancelled within configured undo window
+TC18,Attachments,Upload attachment,P1,Automate,Correct filename appears in compose
+TC19,Attachments,Send and download attachment,P2,Automate,Downloaded file matches uploaded file
+TC20,Session,Refresh preserves authenticated session,P1,Automate,User remains authenticated or is safely redirected
