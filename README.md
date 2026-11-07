@@ -75,10 +75,3 @@ mvn clean test -Dbrowser=edge -Dheadless=true
 4. **Frequent UI changes:** prefer stable accessible roles/labels and test IDs agreed with developers; centralize locators; avoid brittle absolute XPath; keep component objects small.
 5. **Scale to 200+:** domain-based page/component objects, fixtures, data factories, tags, parallel-safe accounts, API-assisted setup only where permitted, CI sharding, reporting and ownership.
 
-## Video walkthrough (4–5 minutes)
-- 0:00–0:30 – scope and test strategy
-- 0:30–1:15 – framework architecture and POM
-- 1:15–2:45 – demonstrate key tests (login, send, draft, search)
-- 2:45–3:30 – async/attachment or two-account workflow
-- 3:30–4:15 – report, screenshot evidence and defect handling
-- 4:15–5:00 – trade-offs, limitations and next improvements
